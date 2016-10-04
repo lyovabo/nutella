@@ -1,0 +1,31 @@
+{
+  "name": "nutella",
+  "version": "1.0.0",
+  "description": "nutella website frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyovabo/nutella.git"
+  },
+  "keywords": [
+    "nutella",
+    "frontend"
+  ],
+  "author": "LyovS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lyovabo/nutella/issues"
+  },
+  "homepage": "https://github.com/lyovabo/nutella#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2"
+  }
+}
