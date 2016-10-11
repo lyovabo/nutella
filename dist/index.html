@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script src="js/main.min.js"></script>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body ng-app="Nutella">
+    <div id="head-wrapper" ng-controller="headerController as header">
+        <header>
+            <a id="logo-left" class="logo" href='#'>
+                <h1>{{logo}}</h1>
+            </a>
+            <main-menu items="header.items"></main-menu>
+            <a id="logo-right" class="logo text-logo" href='#'>
+                <h2>{{logo}}</h2>
+            </a>
+            <social-networks city="header.city"></social-networks>
+        </header>
+    </div>
+    <div id="content-wrapper" ng-controller="contentController as content">
+        <header>
+            <a class="logo-text logo" href='#'>
+                <h3>nutella</h3>
+            </a>
+            <p class="italic-text">
+                <span>
+        			lets you to express yourself in a fun and animated way
+    			</span>
+            </p>
+        </header>
+        <div id="content">
+            <main-form placeholder='content.formText' text='content.emailText'></main-form>
+            <p></p>
+        </div>
+    </div>
+    <div id="footer-wrapper" ng-controller="footerController as footer">
+        <div class="wrapper top">
+            <footer>
+                <div class="left-menu">
+                    <ul>
+                        <li>
+                            <h3>
+                    		About nutella messanger
+                		</h3>
+                        </li>
+                        <li ng-repeat=" leftMenu in footer.leftMenu ">
+                            <a href="">{{leftMenu}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-menu">
+                    <span class="logo-text logo"></span>
+                    <ul>
+                        <li ng-repeat=" rightMenu in footer.rightMenu ">
+                            <a href="">{{rightMenu}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <div class="bottom wrapper">
+            <footer id="bottom-footer">
+                <ul>
+                    <li ng-repeat='elem in footer.bottomMenu'>
+                        <a href="">{{elem}}</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
